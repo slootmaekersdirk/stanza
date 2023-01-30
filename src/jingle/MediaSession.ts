@@ -84,21 +84,7 @@ export default class MediaSession extends ICESession {
 
     public get streams(): MediaStream[] {
         if (this.pc.signalingState !== 'closed') {
-            if (!this.pc.getReceivers) {
-                return (this.pc as any).getRemoteStreams();
-            }
-
-            console.log(' DSL HACK');
-            var stream = new MediaStream();
-
-            this.pc.getReceivers().forEach(function (receiver) {
-                var track = receiver.track;
-                if (track) {
-                    stream.addTrack(track);
-                }
-            });
-
-            return [stream];
+            return (this.pc as any).getRemoteStreams();
         }
         return [];
     }
