@@ -13,10 +13,5 @@ module.exports = {
     },
 
     plugins: [
-        new BundleAnalyzerPlugin({
-            analyzerMode: 'static',
-            defaultSizes: 'gzip',
-            reportFilename: 'webpack-stats.html'
-        })
     ]
 };
