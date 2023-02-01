@@ -64,14 +64,6 @@
     "license": "MIT",
     "main": "./dist/npm/index.js",
     "module": "./dist/npm/index.js",
-    "browser": {
-        "./platform": "./dist/npm/platform/browser/index.js"
-      },
-    "react-native": {
-        "./platform": "./dist/npm/platform/react-native/index.js"
-        },
-    "sideEffects": false,
-    "typings": "./dist/npm/index",
     "prettier": {
         "tabWidth": 4,
         "printWidth": 100,
