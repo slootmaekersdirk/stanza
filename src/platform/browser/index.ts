@@ -29,8 +29,7 @@ export function createResolver(): Resolver | undefined {
 const nativeFetch = globalThis.fetch.bind(globalThis);
 const nativeWS = globalThis.WebSocket;
 
-const nativeRTCPeerConnection: RTCPeerConnection | undefined = (globalThis as any)
-    .RTCPeerConnection;
+const nativeRTCPeerConnection: RTCPeerConnection | undefined = window.RTCPeerConnection;
 
 export const name = 'browser';
 export {
