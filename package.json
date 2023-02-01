@@ -88,6 +88,6 @@
         "test": "jest",
         "prepare": "npm run build",
         "validate": "npm ls",
-        "prepare":"npm start build"
+        "prepare":"npm run build"
     }
 }
