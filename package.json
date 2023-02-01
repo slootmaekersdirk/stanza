@@ -87,7 +87,6 @@
         "lint": "eslint .",
         "test": "jest",
         "prepare": "npm run build",
-        "validate": "npm ls",
-        "prepare":"npm run build"
+        "validate": "npm ls"
     }
 }
