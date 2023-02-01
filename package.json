@@ -1,5 +1,5 @@
 {
-    "name": "stanza",
+    "name": "stanza-ideal",
     "description": "Modern XMPP in the browser, with a JSON API",
     "version": "12.18.0",
     "author": "Lance Stout <lancestout@gmail.com>",
