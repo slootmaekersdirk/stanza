@@ -86,7 +86,6 @@
         "license-check": "npx license-checker --production --excludePrivatePackages --summary",
         "lint": "eslint .",
         "test": "jest",
-        "prepare": "npm run build",
         "validate": "npm ls"
     }
 }
